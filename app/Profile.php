@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class News extends Model
+class Profile extends Model
 {
     protected $guarded = array('id');
 
@@ -15,4 +15,12 @@ class News extends Model
         'hobby' => 'required',
         'introduction' => 'required',
     );
+    
+    // 以下を追記php/laraver17課題
+    // Profile Modelに関連付けを行う
+    public function profile_histories()
+    {
+      return $this->hasMany('App\ProfileHistory');
+
+    }
 }

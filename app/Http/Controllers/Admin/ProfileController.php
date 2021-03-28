@@ -5,10 +5,10 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-//以下を追記することでProfileModelが扱えるようになる。php/laravel14の課題
+//以下を追記することでProfileModelが扱えるようになる。
 use App\Profile;
 
-//以下を追記17
+
 use App\ProfileHistory;
 
 use Carbon\Carbon;
